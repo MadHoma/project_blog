@@ -25,7 +25,7 @@ SECRET_KEY = 't28j5aav#a68iz9!83415x&2_42bi7=(@k*6#vtgmgj58*2&9)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['madhoma.pythonanywhere.com',]
 
 
 # Application definition
