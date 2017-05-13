@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='article',
             name='category',
-            field=models.ForeignKey(default='All', on_delete=django.db.models.deletion.CASCADE, to='blog.Category'),
+            field=models.ForeignKey(default='-1', on_delete=django.db.models.deletion.CASCADE, to='blog.Category'),
             preserve_default=False,
         ),
     ]
