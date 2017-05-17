@@ -1,6 +1,7 @@
  {% extends 'base.html' %}
 
     {% block content %}
+
         {% for article in articles %}
             <div class="card">
                 <div class="post">
@@ -16,4 +17,9 @@
                 </div>
             </div>
         {% endfor %}
+
+        {% if not articles %}
+            <h1><a class="post" href="">Записей не найдено</a></h1>
+        {% endif %}
+        
     {% endblock content %}

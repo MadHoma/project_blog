@@ -6,8 +6,18 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" style="align-items: center; justify-content: space-between;">
         <h1 class="header"><a href="/">Blog</a></h1>
+            <form class="search" id="searchform"  method="get" action="/search/" accept-charset="utf-8" 
+                                style="align-items: center; justify-content: space-between; margin-right: 30px; padding-left: 5px; margin-top: 15px;">
+
+                <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search" 
+                                style="background-color: rgba(0,0,0,0);border: 0; padding: 5px; color: white; outline: none">
+
+                <button class="searchbutton" type="submit" style="background: transparent no-repeat; border: 0">
+                  <img src={% static '/image/ic_search.png'%} style="width: 30px; text-align: center">
+                </button>
+            </form>
     </div>
     <div class="content">
         <div class="row">

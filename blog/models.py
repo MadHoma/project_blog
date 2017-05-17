@@ -1,15 +1,20 @@
 import datetime
 from django.db import models
 from django.utils import timezone
+from treebeard.mp_tree import MP_Node
 
 
 # Create your models here.
 
-class Category(models.Model):
+class Category(MP_Node):
     class Meta:
         db_table = 'category'
     name = models.CharField(max_length=100)
+    node_order_by = ['name']
 
+    def __unicode__(self):
+        return 'Category: %s' % self.name
+        
     def __str__(self):
         return self.name
 
