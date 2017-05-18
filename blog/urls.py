@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from blog.views import Blog, BlogSearch
+from blog.views import Blog
 from django.conf import settings
 from django.conf.urls.static import static
 
